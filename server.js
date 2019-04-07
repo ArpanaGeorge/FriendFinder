@@ -1,8 +1,11 @@
+//impoorting packages
 var express = require('express');
 var bodyParser = require('body-parser');
 
+//Creating an Express application
 var app = express();
 
+//sets up deployment and development env ports
 var PORT = process.env.PORT || 5000;
 
 // app.use(express.static(__dirname + '/assets'));

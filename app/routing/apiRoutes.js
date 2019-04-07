@@ -1,3 +1,8 @@
+// ===============================================================================
+// LOAD DATA
+// We are linking our routes to "data" source.
+// This data sources hold array of information on friends-list.
+// ===============================================================================
 var friendsData = require('../data/friends');
 
 module.exports = function(app) {
@@ -5,6 +10,7 @@ module.exports = function(app) {
     res.json(friendsData);
   });
 
+//Finding the best match
   app.post("/api/friends", function(req, res) {
     var newFriendScore = req.body.scores;
     var scoredArr = [];
