@@ -12,7 +12,7 @@ This is a compatibility-based "FriendFinder" application. This full-stack site w
 
 2. `server.js` file has npm packages : `express` and `body-parser`.
 
-3.  `htmlRoutes.js` file include two routes:
+3. `htmlRoutes.js` file include two routes:
 
    * A GET Route to `/survey` which display the survey page.
    * A default, catch-all route that leads to `home.html` which displays the home page.
